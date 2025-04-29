@@ -7,7 +7,7 @@ import { OrganizationInfo } from "./components/OrganizationInfo";
 import { ShareDrawer } from "./components/ShareDrawer";
 import { CAUSES } from "./lib/causes";
 
-const ACTIVE_CAUSE = CAUSES["myanmar-relief"];
+const ACTIVE_CAUSE = CAUSES["crystal-hearts"];
 
 function App() {
   const [amount, setAmount] = useState<string>("1");
@@ -94,12 +94,7 @@ function App() {
 
       <OrganizationInfo cause={ACTIVE_CAUSE} isOpen={infoDrawerOpen} onOpenChange={setInfoDrawerOpen} />
 
-      <ShareDrawer
-        cause={ACTIVE_CAUSE}
-        isOpen={shareDrawerOpen}
-        onOpenChange={setShareDrawerOpen}
-        onComplete={handleShareComplete}
-      />
+      <ShareDrawer cause={ACTIVE_CAUSE} isOpen={shareDrawerOpen} onOpenChange={setShareDrawerOpen} onComplete={handleShareComplete} />
     </div>
   );
 }
