@@ -1,6 +1,5 @@
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 import type { Cause } from "@/types";
-import { sdk } from "@farcaster/frame-sdk";
 
 interface OrganizationInfoProps {
   cause: Cause;
@@ -32,14 +31,10 @@ export function OrganizationInfo({ cause, isOpen, onOpenChange }: OrganizationIn
           </div>
 
           <div className="pt-2">
-            <button
-              type="button"
-              onClick={() => cause.website && sdk.actions.openUrl(cause.website)}
-              className="inline-flex items-center text-xl text-primary font-medium bg-secondary px-4 py-2 rounded-full hover:bg-secondary/80 cursor-pointer"
-            >
+            <a target="_blank" href={cause.website} className="inline-flex items-center text-xl text-primary font-medium bg-secondary px-4 py-2 rounded-full hover:bg-secondary/80 cursor-pointer">
               Visit Website
               <span className="ml-2">↗</span>
-            </button>
+            </a>
           </div>
         </div>
       </DrawerContent>
