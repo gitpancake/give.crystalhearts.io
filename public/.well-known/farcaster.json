@@ -7,12 +7,12 @@
   "frame": {
     "version": "1",
     "name": "Give",
-    "imageUrl": "https://give.warpcast.com/frame-embed.png",
+    "imageUrl": "https://give-crystalhearts-io.vercel.app/frame-embed.png",
     "buttonTitle": "Give",
-    "iconUrl": "https://give.warpcast.com/icon.png",
-    "splashImageUrl": "https://give.warpcast.com/splash.png",
+    "iconUrl": "https://give-crystalhearts-io.vercel.app/icon.png",
+    "splashImageUrl": "https://give-crystalhearts-io.vercel.app/splash.png",
     "splashBackgroundColor": "#ffffff",
-    "homeUrl": "https://give.warpcast.com/",
+    "homeUrl": "https://give-crystalhearts-io.vercel.app/",
     "webhookUrl": "https://client.warpcast.com/v1/give-mini-app-webhook"
   }
 }
