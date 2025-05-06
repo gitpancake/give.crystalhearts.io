@@ -15,7 +15,7 @@ export const CAUSES: CauseCollection = {
     shareText: "I just donated to help medics, defenders, and civilians in frontline areas of Ukraine. Join me in supporting the effort.",
     userName: "crystalhearts",
     image: "/causes/crystal-hearts/image.jpeg",
-    logo: "/causes/crystal-hearts/logo.jpeg",
+    logo: "/causes/crystal-hearts/logo.png",
     userFid: 465152,
   },
 };
